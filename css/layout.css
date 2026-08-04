@@ -120,7 +120,34 @@ main > section {
 
 .legal-page h1 { font-size: clamp(3.5rem, 9vw, 6.5rem); }
 .legal-page h2 { margin-top: 2.8rem; font-family: var(--sans); font-size: 1.1rem; font-weight: 700; letter-spacing: 0; }
+.legal-page h3 { margin-top: 2rem; font-size: 1rem; }
 .legal-page p { color: var(--muted); }
+.legal-page ul,
+.legal-page ol { margin: 0 0 1.5rem; padding-left: 1.35rem; color: var(--muted); }
+.legal-page li + li { margin-top: 0.45rem; }
+.legal-page [id] { scroll-margin-top: 2rem; }
+
+.policy-summary,
+.table-of-contents {
+  margin-block: 3.5rem;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  background: var(--ivory-deep);
+  border-radius: 1.25rem;
+}
+
+.policy-summary h2,
+.table-of-contents h2 { margin-top: 0; }
+.table-of-contents a { text-underline-offset: 0.25em; }
+
+.summary-list,
+.faq-list { margin: 0; }
+.summary-list dt,
+.faq-list dt { margin-top: 1.4rem; font-weight: 700; }
+.summary-list dt:first-child,
+.faq-list dt:first-child { margin-top: 0; }
+.summary-list dd,
+.faq-list dd { margin: 0.25rem 0 0; color: var(--muted); }
+.faq-list { margin-block: 1.5rem 3rem; }
 
 @media (max-width: 800px) {
   .site-header { min-height: 5.25rem; }
