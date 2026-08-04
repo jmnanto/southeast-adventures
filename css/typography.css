@@ -1,0 +1,59 @@
+body {
+  font-family: var(--sans);
+  font-size: 1rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, p { margin-top: 0; }
+
+h1, h2 {
+  font-family: var(--serif);
+  font-weight: 400;
+  letter-spacing: -0.045em;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  font-size: clamp(4.4rem, 11vw, 9.5rem);
+  line-height: 0.82;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  font-size: clamp(3.2rem, 7vw, 6.5rem);
+  line-height: 0.92;
+}
+
+h3 {
+  margin-bottom: 0.35rem;
+  font-size: clamp(1.35rem, 2vw, 1.75rem);
+  line-height: 1.2;
+}
+
+a { color: inherit; }
+
+.eyebrow {
+  margin-bottom: 1.4rem;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.hero-copy {
+  margin-bottom: 2.25rem;
+  color: var(--muted);
+  font-family: var(--serif);
+  font-size: clamp(1.45rem, 3vw, 2.2rem);
+  line-height: 1.25;
+}
+
+.app-description {
+  max-width: 30rem;
+  margin-bottom: 2rem;
+  color: var(--muted);
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  line-height: 1.55;
+}

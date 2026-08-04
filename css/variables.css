@@ -1,0 +1,36 @@
+:root {
+  --ivory: #f6f1e7;
+  --ivory-deep: #ebe2d3;
+  --paper: #fffdf8;
+  --ink: #1e211d;
+  --muted: #686b64;
+  --line: rgba(30, 33, 29, 0.15);
+  --forest: #233d32;
+  --sage: #a9b7a5;
+  --clay: #c88263;
+  --gold: #d5aa58;
+  --serif: "Iowan Old Style", "Baskerville", "Times New Roman", serif;
+  --sans: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --max-width: 1240px;
+  --page-gutter: clamp(1.25rem, 4vw, 4.5rem);
+  --radius-large: 2rem;
+  --ease: 220ms cubic-bezier(.2, .8, .2, 1);
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  background: var(--ivory);
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--ivory);
+}
+
+::selection {
+  color: var(--paper);
+  background: var(--forest);
+}
