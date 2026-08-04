@@ -82,6 +82,7 @@
   border-radius: 22%;
   background: var(--forest);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12), 0 12px 30px rgba(35, 61, 50, 0.13);
+  object-fit: cover;
 }
 
 .app-icon--large { width: 5rem; }
