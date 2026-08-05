@@ -128,6 +128,26 @@
 
 .phone-stage:hover .phone { transform: rotate(0deg) translateY(-6px); }
 
+.phone--landscape {
+  width: min(92%, 680px);
+  border-radius: 2.6rem;
+  transform: rotate(1deg);
+}
+
+.phone-screen.phone-screen--screenshot {
+  min-height: 0;
+  padding: 0;
+  background: #392116;
+  border-radius: 2rem;
+}
+
+.phone-screen--screenshot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: inherit;
+}
+
 .phone-speaker {
   position: absolute;
   z-index: 2;
@@ -228,6 +248,8 @@
 @media (max-width: 800px) {
   .phone { width: min(76%, 305px); }
   .phone-screen { min-height: 540px; }
+  .phone--landscape { width: min(94%, 680px); }
+  .phone-screen.phone-screen--screenshot { min-height: 0; }
   .map-card { height: 220px; }
 }
 

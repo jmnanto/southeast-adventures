@@ -15,8 +15,8 @@ h1, h2 {
 
 h1 {
   margin-bottom: 1.5rem;
-  font-size: clamp(4.4rem, 11vw, 9.5rem);
-  line-height: 0.82;
+  font-size: clamp(3.7rem, 8vw, 7rem);
+  line-height: 0.88;
 }
 
 h2 {

@@ -43,7 +43,7 @@ main > section {
 
 .phone-stage {
   display: grid;
-  min-height: 720px;
+  min-height: 470px;
   place-items: center;
   overflow: hidden;
   border-radius: var(--radius-large);
@@ -180,7 +180,7 @@ main > section {
   .site-header { min-height: 5.25rem; }
   .hero { min-height: calc(100svh - 5.25rem); padding-block: 4rem 6rem; }
   .featured { grid-template-columns: 1fr; }
-  .phone-stage { min-height: 590px; }
+  .phone-stage { min-height: 300px; }
   .app-row { align-items: flex-start; flex-direction: column; }
   .app-links { padding-left: 5.9rem; }
   .site-footer { grid-template-columns: 1fr; gap: 2rem; }
