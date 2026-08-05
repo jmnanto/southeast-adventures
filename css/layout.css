@@ -125,7 +125,8 @@ main > section {
 }
 
 .footer-brand p,
-.copyright {
+.copyright,
+.trademark {
   margin: 0.5rem 0 0;
   color: var(--muted);
   font-size: 0.82rem;
@@ -136,7 +137,14 @@ main > section {
   gap: 2rem;
 }
 
-.copyright { grid-column: 1 / -1; }
+.copyright,
+.trademark { grid-column: 1 / -1; }
+
+.trademark {
+  max-width: 44rem;
+  margin-top: -2.5rem;
+  font-size: 0.7rem;
+}
 
 .legal-page {
   width: min(100% - (2 * var(--page-gutter)), 760px);
@@ -185,6 +193,7 @@ main > section {
   .app-links { padding-left: 5.9rem; }
   .site-footer { grid-template-columns: 1fr; gap: 2rem; }
   .copyright { grid-column: auto; }
+  .trademark { grid-column: auto; margin-top: -1.5rem; }
 }
 
 @media (max-width: 520px) {

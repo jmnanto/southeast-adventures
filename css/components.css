@@ -34,8 +34,7 @@
 .nav-link:hover,
 .footer-links a:hover { text-decoration: underline; text-underline-offset: 0.35em; }
 
-.button,
-.store-badge {
+.button {
   display: inline-flex;
   min-height: 3.1rem;
   align-items: center;
@@ -51,27 +50,28 @@
 .button { padding: 0.75rem 1.35rem; }
 .button--primary { color: var(--paper); background: var(--ink); }
 .button--secondary { background: transparent; }
-.button:hover, .store-badge:hover { transform: translateY(-2px); }
+.button:hover { transform: translateY(-2px); }
 .button--secondary:hover { color: var(--paper); background: var(--ink); }
 
-.store-badge {
-  min-width: 10.8rem;
-  gap: 0.65rem;
-  padding: 0.55rem 1rem;
-  color: var(--paper);
-  background: var(--ink);
-  border-radius: 0.65rem;
-  line-height: 1.05;
+.app-store-link {
+  display: inline-flex;
+  flex: 0 0 auto;
+  line-height: 0;
+  transition: transform var(--ease);
 }
 
-.store-badge small {
+.app-store-link:hover { transform: translateY(-2px); }
+
+.app-store-link img {
   display: block;
-  margin-bottom: 0.12rem;
-  font-size: 0.58rem;
-  font-weight: 500;
+  width: 120px;
+  height: 40px;
 }
 
-.apple-mark { font-size: 1.5rem; }
+.app-store-link--featured img {
+  width: 150px;
+  height: 50px;
+}
 
 .app-icon {
   position: relative;
