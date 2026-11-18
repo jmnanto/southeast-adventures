@@ -1,0 +1,4 @@
+/* Reuse the established website page styles without changing Storekeeper. */
+@import url("../../storekeeper/assets/pages.css");
+:root{--forest:#09223d;--gold:#087f82}
+.product-subtitle{color:#087f82;font-weight:700;letter-spacing:.12em;text-transform:uppercase}

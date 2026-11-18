@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="-18 -19 180 180" role="img" aria-label="Sale Readiness hanging sale tag with a checkmark">
+  <rect x="-18" y="-19" width="180" height="180" fill="#FDF9F4"/>
+  <path d="M 30 42 C 18 39 9 29 12 18 C 14 9 23 4 31 8 C 39 12 43 19 46 26" fill="none" stroke="#09223D" stroke-width="5.8" stroke-linecap="round"/>
+  <path d="M 39 20 Q 41 19.5 46 20.5 L 81 28 Q 87 29 90 35 L 120 85 Q 123 90 121 96 L 76 132 Q 70 137 64 133 L 25 73 Q 22 69 23.5 64 L 32 29 Q 34 22 39 20 Z" fill="#FFFDFA" stroke="#09223D" stroke-width="5.8" stroke-linejoin="round"/>
+  <path d="M 29 42 L 32 29 Q 34 22 39 20 Q 42 19 46 20.5 L 55 22.4" fill="none" stroke="#087F82" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="50.5" cy="42" r="6.9" fill="none" stroke="#09223D" stroke-width="5.2"/>
+  <path d="M 42 18.5 C 47 24.2 48.8 31.1 49.5 36.4 C 49.9 40 50.8 44.3 52 47.2" fill="none" stroke="#09223D" stroke-width="5.4" stroke-linecap="round"/>
+  <path d="M 46.9 47.9 C 50.5 50 54.6 48.9 56.5 45.5" fill="none" stroke="#09223D" stroke-width="5.2" stroke-linecap="round"/>
+  <circle cx="59.8" cy="75.5" r="5.6" fill="none" stroke="#09223D" stroke-width="4.7"/>
+  <circle cx="88" cy="82.5" r="5.6" fill="none" stroke="#09223D" stroke-width="4.7"/>
+  <path d="M 69.5 99 L 78 59.5" fill="none" stroke="#09223D" stroke-width="5.1" stroke-linecap="round"/>
+  <circle cx="111.6" cy="104.2" r="22.1" fill="#06BEB3"/>
+  <path d="M 102.4 105.1 L 108.3 111 L 121 97.2" fill="none" stroke="#FFFDFA" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
