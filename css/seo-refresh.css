@@ -561,7 +561,7 @@ button:focus-visible, .home a:focus-visible {
   .product-preview .product-media img { width: min(100%, 10rem); }
 }
 
-/* Fit narrower media frames to the artwork and allow a hero without media. */
+/* Fit narrower media frames to the artwork. */
 .product-preview .product-page--portrait .product-media {
   justify-self: center;
   width: min(100%, 13.5rem);
@@ -569,10 +569,25 @@ button:focus-visible, .home a:focus-visible {
   background: var(--paper);
 }
 
-.product-preview .product-page--text-only .product-hero {
-  grid-template-columns: minmax(0, 42rem);
-}
-
 @media (max-width: 46rem) {
   .product-preview .product-page--portrait .product-media { width: min(100%, 11.5rem); }
+}
+
+.product-preview .product-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 12rem));
+  align-items: start;
+  gap: clamp(.75rem, 3vw, 1.25rem);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.product-preview .product-gallery li { margin: 0; }
+.product-preview .product-gallery a { display: block; border-radius: .4rem; }
+.product-preview .product-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: inherit;
 }
