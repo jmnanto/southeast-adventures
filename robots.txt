@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://southeast-adventures.com/sitemap.xml

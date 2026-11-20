@@ -1,0 +1,118 @@
+/* Shared additions for the app directory and product landing pages. */
+.site-header .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: .65rem;
+}
+
+.company-mark {
+  display: block;
+  flex: none;
+}
+
+.hero-copy {
+  max-width: 36ch;
+}
+
+.app-category-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .65rem 1.5rem;
+}
+
+.app-category-nav a,
+.app-row h4 a {
+  text-underline-offset: .2em;
+}
+
+.app-group + .app-group {
+  margin-top: clamp(2rem, 6vw, 4rem);
+}
+
+.app-group h3 {
+  margin-bottom: 1rem;
+}
+
+.app-group .app-row {
+  position: relative;
+}
+
+.app-row h4 a::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+}
+
+.app-row:hover h4 a {
+  text-decoration-thickness: 2px;
+}
+
+.app-row h4 {
+  margin: 0 0 .45rem;
+  font-size: clamp(1.25rem, 2vw, 1.65rem);
+  line-height: 1.25;
+}
+
+.app-row .app-icon--merchant {
+  padding: .5rem;
+  background: #fffdf8;
+}
+
+.product-app-icon {
+  border-radius: 21%;
+}
+
+.store-badge {
+  display: inline-flex;
+  align-self: flex-start;
+  border-radius: .5rem;
+}
+
+.store-badge img {
+  display: block;
+}
+
+.product-screenshot {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 38rem;
+  height: auto;
+  object-fit: contain;
+  border-radius: .75rem;
+}
+
+.product-faq {
+  max-width: 68ch;
+  margin: 0;
+}
+
+.product-faq dt {
+  margin-top: 1.4rem;
+  font-weight: 700;
+}
+
+.product-faq dd {
+  margin: .25rem 0 0;
+}
+
+@media (max-width: 520px) {
+  .site-header:has(.company-mark) {
+    flex-wrap: wrap;
+    gap: .65rem 1rem;
+  }
+
+  .hero {
+    min-height: 62svh;
+    padding-block: 3.5rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.8rem, 11vw, 3.7rem);
+  }
+
+  .product-identity {
+    flex-direction: column;
+    margin-bottom: 1.75rem;
+  }
+}

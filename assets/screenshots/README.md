@@ -1,3 +1,3 @@
 # App screenshots
 
-Production app screenshots belong in this folder. `famfind-adventures.jpg` is used in the featured FamFind device preview.
+FamFind’s adventure selector is used on the homepage and product page. Guided, NaniNavi, memrays, marizz, and michi use previews from their Apple App Store listings, saved as WebP. Sale Readiness uses the approved Shopify listing overview image, resized for the website.
