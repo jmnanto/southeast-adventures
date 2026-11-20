@@ -86,6 +86,15 @@
 .product-faq dd { margin: .25rem 0 0; }
 
 /* Homepage */
+.home {
+  --ivory: #f5f3ee;
+  --ink: #20232b;
+  --muted: #515461;
+  --line: #dedad1;
+  --royal: #1943c0;
+}
+
+.home .site-header { background: #fbfaf7; }
 .home .site-header nav { display: flex; flex-wrap: wrap; gap: .75rem 1.5rem; }
 
 .home-hero, .app-directory {
@@ -97,14 +106,14 @@
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   align-items: center;
-  gap: clamp(2rem, 5vw, 5rem);
-  padding-block: clamp(3rem, 8vw, 6.75rem) clamp(3rem, 7vw, 5rem);
+  gap: clamp(1.75rem, 4.5vw, 4.25rem);
+  padding-block: clamp(2.125rem, 5vw, 4.5rem) clamp(2.125rem, 4vw, 3.5rem);
 }
 
 .hero-intro h1 {
   max-width: 12ch;
-  margin: 0 0 1.25rem;
-  font-size: clamp(2.75rem, 5.5vw, 4.65rem);
+  margin: 0 0 1rem;
+  font-size: clamp(2.625rem, 5vw, 4.35rem);
   line-height: 1.015;
   font-weight: 740;
   letter-spacing: -.065em;
@@ -112,7 +121,7 @@
 
 .hero-intro p {
   max-width: 38ch;
-  margin-bottom: 1.65rem;
+  margin-bottom: 1.35rem;
   color: var(--muted);
   font-size: clamp(1.0625rem, 1.5vw, 1.25rem);
   line-height: 1.55;
@@ -135,10 +144,10 @@
 
 .app-carousel {
   min-width: 0;
-  padding: clamp(.875rem, 2vw, 1.375rem);
-  background: #f5f7fc;
-  border: 1px solid var(--line);
-  border-radius: .875rem;
+  padding: clamp(1rem, 2.5vw, 2rem);
+  background: var(--royal);
+  color: #fff;
+  border-radius: 1rem;
 }
 
 .carousel-header, .directory-header {
@@ -148,7 +157,7 @@
   flex-wrap: wrap;
 }
 
-.carousel-header { gap: .5rem 1rem; margin-bottom: .875rem; }
+.carousel-header { gap: .375rem .65rem; margin-bottom: .875rem; }
 .carousel-header h2 {
   margin: 0;
   font-size: 1.0625rem;
@@ -160,21 +169,17 @@
 .carousel-controls {
   display: flex;
   align-items: center;
-  gap: .375rem;
+  gap: .25rem;
 }
 
 .carousel-position {
-  margin-inline-end: .25rem;
-  color: var(--muted);
+  color: #e4ecff;
   font-size: .875rem;
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
 
 .carousel-controls button, .app-filters button {
-  border: 1px solid var(--line);
-  background: white;
-  color: var(--ink);
   font: inherit;
   cursor: pointer;
 }
@@ -185,16 +190,18 @@
   width: 2.75rem;
   height: 2.75rem;
   padding: 0;
-  border-radius: .4375rem;
-  color: var(--royal);
+  border: 1px solid #8fa9f3;
+  border-radius: 50%;
+  background: transparent;
+  color: #fff;
 }
 
-.carousel-controls button:hover { border-color: var(--royal); }
+.carousel-controls button:hover { background: #2954cd; }
 
 .carousel-cards {
   display: flex;
-  align-items: stretch;
-  gap: .625rem;
+  align-items: center;
+  gap: 1.25rem;
 }
 
 .featured-card {
@@ -203,10 +210,6 @@
   min-width: 0;
   flex-direction: column;
   align-items: flex-start;
-  padding: clamp(1.125rem, 2.3vw, 1.75rem);
-  border: 1px solid var(--line);
-  border-radius: .625rem;
-  background: #fff;
 }
 
 .featured-app-heading {
@@ -226,6 +229,13 @@
   object-fit: contain;
 }
 
+.featured-app-heading img {
+  width: clamp(4.5rem, 6.4vw, 5.5rem);
+  height: auto;
+  aspect-ratio: 1;
+  border: 0;
+}
+
 .platform-label {
   margin: 0;
   color: var(--muted);
@@ -233,23 +243,27 @@
   font-weight: 500;
 }
 
+.featured-app-heading .platform-label { color: #e4ecff; }
+
 .featured-app-heading h3 {
   margin: .15rem 0 0;
-  font-size: clamp(1.35rem, 2.5vw, 1.875rem);
+  font-size: clamp(1.55rem, 3vw, 2.375rem);
+  line-height: 1.08;
   letter-spacing: -.04em;
   overflow-wrap: anywhere;
 }
 
 .featured-description {
-  margin: 0 0 .875rem;
-  min-height: 4.65em;
-  color: var(--muted);
+  max-width: 40ch;
+  min-height: 3.1em;
+  margin: 0 0 .75rem;
+  color: #f0f4ff;
   line-height: 1.55;
 }
 
 .featured-link {
   margin-top: auto;
-  color: var(--royal);
+  color: #fff;
   font-weight: 650;
   text-underline-offset: .25em;
 }
@@ -258,13 +272,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 0 0 4.75rem;
+  flex: 0 0 5.25rem;
   flex-direction: column;
   gap: .5rem;
-  padding: .375rem;
-  border: 1px solid var(--line);
-  border-radius: .625rem;
-  color: var(--muted);
+  padding-inline-start: .75rem;
+  border-inline-start: 1px solid #8fa9f3;
+  color: #e4ecff;
   text-align: center;
   font-size: .875rem;
   line-height: 1.25;
@@ -272,7 +285,7 @@
 }
 
 .app-directory {
-  padding-block: 1.5rem clamp(3rem, 6vw, 5rem);
+  padding-block: 1.25rem clamp(2.5rem, 4.5vw, 4rem);
   border-top: 1px solid var(--line);
 }
 
@@ -287,6 +300,9 @@
 
 .app-filters { display: flex; flex-wrap: wrap; gap: .4rem; }
 .app-filters button {
+  border: 1px solid var(--line);
+  background: #fbfaf7;
+  color: var(--ink);
   min-height: 2.75rem;
   padding: .3rem .8rem;
   border-radius: .4375rem;
@@ -338,6 +354,7 @@ button:focus-visible, .home a:focus-visible {
   outline: 2px solid var(--royal);
   outline-offset: 3px;
 }
+.home .app-carousel :focus-visible,
 .home .site-footer a:focus-visible { outline-color: white; }
 .home .directory-app h3 a:focus-visible { outline: 0; }
 
@@ -350,9 +367,7 @@ button:focus-visible, .home a:focus-visible {
   white-space: nowrap;
 }
 
-@media (max-width: 72rem) {
-  .carousel-preview--previous { display: none; }
-}
+.carousel-preview--previous { display: none; }
 
 @media (max-width: 57rem) {
   .carousel-preview { display: none; }
@@ -360,14 +375,19 @@ button:focus-visible, .home a:focus-visible {
 
 @media (max-width: 46rem) {
   .home-hero, .directory-grid { grid-template-columns: minmax(0, 1fr); }
-  .home-hero { gap: 2.25rem; }
+  .home-hero { gap: 1.75rem; }
   .hero-intro h1 { max-width: 13ch; }
+  .featured-description { min-height: 4.65em; }
 }
 
 @media (max-width: 32.5rem) {
   .site-header { flex-wrap: wrap; }
   .company-wordmark { width: 10rem; }
   .product-identity { flex-direction: column; margin-bottom: 1.75rem; }
+}
+
+@media (max-width: 22rem) {
+  .featured-description { min-height: 6.2em; }
 }
 
 @media (prefers-reduced-motion: reduce) {
