@@ -43,7 +43,7 @@
   <link rel="stylesheet" href="/storekeeper/assets/pages.css">
   <link rel="stylesheet" href="/css/seo-refresh.css">
 </head>
-<body>
+<body class="product-preview">
   <a class="skip" href="#main">Skip to content</a>
   <header class="site-header">
     <a class="brand" href="/"><img class="company-wordmark" src="/assets/brand/wordmark.png" width="576" height="144" alt="Southeast Adventures"></a>
@@ -52,47 +52,84 @@
       <a href="/support/">Support</a>
     </nav>
   </header>
-  <main id="main" class="product-page">
+  <main id="main" class="product-page product-page--portrait">
     <section class="product-hero" aria-labelledby="product-title">
-      <div class="product-identity">
-        <img class="product-app-icon" src="/assets/icons/michi.png" width="88" height="88" alt="">
-        <h1 id="product-title">michi: Compare Options With a Weighted Decision Matrix</h1>
+      <div class="product-intro">
+        <div class="product-identity">
+          <img class="product-app-icon" src="/assets/icons/michi.png" width="64" height="64" alt="">
+          <h1 id="product-title">michi: Compare Options With a Weighted Decision Matrix</h1>
+        </div>
+        <p class="lead">A pros-and-cons list can hide the fact that one factor matters much more than the others. michi helps you compare choices by weighting your priorities and rating each option against the same criteria. The visual breakdown makes it easier to see why one option scored higher.</p>
+        <p>For iPhone and iPad with iOS or iPadOS 14 or later. Analyze one decision free. Continued use requires a lifetime Michi Pro purchase.</p>
+        <div class="product-actions">
+          <a class="store-badge" href="https://apps.apple.com/us/app/decision-logic-michi/id6748796286" aria-label="Download michi on the App Store">
+            <img src="/assets/icons/download-on-the-app-store.svg" width="150" height="50" alt="Download on the App Store">
+          </a>
+        </div>
       </div>
-      <p class="lead">A pros-and-cons list can hide the fact that one factor matters much more than the others. michi helps you compare choices by weighting your priorities and rating each option against the same criteria. The visual breakdown makes it easier to see why one option scored higher.</p>
-      <p>For iPhone and iPad with iOS or iPadOS 14 or later. Analyze one decision free. Continued use requires a lifetime Michi Pro purchase.</p>
-      <div class="product-actions">
-        <a class="store-badge" href="https://apps.apple.com/us/app/decision-logic-michi/id6748796286" aria-label="Download michi on the App Store">
-          <img src="/assets/icons/download-on-the-app-store.svg" width="150" height="50" alt="Download on the App Store">
-        </a>
-      </div>
+      <figure class="product-media">
+        <img class="product-screenshot" src="/assets/screenshots/michi.webp" alt="michi App Store preview of the decision comparison app" width="600" height="1298" decoding="async">
+        <figcaption id="screenshot-title">Inside the app</figcaption>
+      </figure>
     </section>
-    <section class="product-section" aria-labelledby="screenshot-title">
-      <h2 id="screenshot-title">Inside the app</h2>
-      <img class="product-screenshot" src="/assets/screenshots/michi.webp" alt="michi App Store preview of the decision comparison app" width="600" height="1298" loading="lazy" decoding="async">
+    <section class="product-section" aria-labelledby="gallery-title">
+      <div class="product-section-heading">
+        <h2 id="gallery-title">More from the app</h2>
+      </div>
+      <div class="product-section-body">
+        <ul class="product-gallery" role="list">
+          <li>
+            <a href="/assets/screenshots/michi-factors.jpg" aria-label="michi decision setup showing a list of factors with importance ratings. Open larger image.">
+              <img src="/assets/screenshots/michi-factors.jpg" alt="michi decision setup showing a list of factors with importance ratings." width="420" height="909" loading="lazy" decoding="async">
+            </a>
+          </li>
+          <li>
+            <a href="/assets/screenshots/michi-comparison.jpg" aria-label="michi results screen ranking phone options and comparing their factor scores. Open larger image.">
+              <img src="/assets/screenshots/michi-comparison.jpg" alt="michi results screen ranking phone options and comparing their factor scores." width="420" height="909" loading="lazy" decoding="async">
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="product-section" aria-labelledby="workflow-title">
-      <h2 id="workflow-title">How michi works</h2>
-      <ol class="product-steps">
-        <li>Name the decision and add the options you’re considering.</li>
-        <li>Choose criteria and give more weight to the factors that matter most to you.</li>
-        <li>Rate each option against those criteria, then review the visual breakdown and compare the trade-offs.</li>
-      </ol>
+      <div class="product-section-heading">
+        <h2 id="workflow-title">How michi works</h2>
+      </div>
+      <div class="product-section-body">
+        <ol class="product-steps">
+          <li>Name the decision and add the options you’re considering.</li>
+          <li>Choose criteria and give more weight to the factors that matter most to you.</li>
+          <li>Rate each option against those criteria, then review the visual breakdown and compare the trade-offs.</li>
+        </ol>
+      </div>
     </section>
     <section class="product-section" aria-labelledby="uses-title">
-      <h2 id="uses-title">When to use michi</h2>
-      <p>Compare job offers by schedule and commute, apartments by rent and location, or laptops by battery life, price, and features.</p>
+      <div class="product-section-heading">
+        <h2 id="uses-title">When to use michi</h2>
+      </div>
+      <div class="product-section-body">
+        <p>Compare job offers by schedule and commute, apartments by rent and location, or laptops by battery life, price, and features.</p>
+      </div>
     </section>
     <section class="product-section" aria-labelledby="faq-title">
-      <h2 id="faq-title">Frequently asked questions</h2>
-      <dl class="product-faq">
-        <dt>Can one factor count more than another?</dt><dd>Yes. Give the more important criterion a higher weight so it contributes more to the comparison.</dd>
-        <dt>Can I save my comparisons?</dt><dd>Michi Pro lets you save and revisit past decisions and create additional projects.</dd>
-      </dl>
+      <div class="product-section-heading">
+        <h2 id="faq-title">Frequently asked questions</h2>
+      </div>
+      <div class="product-section-body">
+        <dl class="product-faq">
+          <dt>Can one factor count more than another?</dt><dd>Yes. Give the more important criterion a higher weight so it contributes more to the comparison.</dd>
+          <dt>Can I save my comparisons?</dt><dd>Michi Pro lets you save and revisit past decisions and create additional projects.</dd>
+        </dl>
+      </div>
     </section>
     <section class="product-section" aria-labelledby="related-title">
-      <h2 id="related-title">Explore more apps</h2>
-      <p><a href="/guided/">Guided</a> · Check shelves, surfaces, and slopes with an iPhone bubble level and angle finder.</p>
-      <p><a href="/#apps">Browse all Southeast Adventures apps</a></p>
+      <div class="product-section-heading">
+        <h2 id="related-title">Explore more apps</h2>
+      </div>
+      <div class="product-section-body">
+        <p><a href="/guided/">Guided</a> · Check shelves, surfaces, and slopes with an iPhone bubble level and angle finder.</p>
+        <p><a href="/#apps">Browse all Southeast Adventures apps</a></p>
+      </div>
     </section>
   </main>
   <footer class="site-footer">

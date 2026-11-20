@@ -394,7 +394,7 @@ button:focus-visible, .home a:focus-visible {
   html { scroll-behavior: auto; }
 }
 
-/* Shared product layout, enabled only on the two pilot pages. */
+/* Shared product landing-page layout. */
 .product-preview {
   --ivory: #f5f3ee;
   --paper: #fbfaf7;
@@ -559,4 +559,35 @@ button:focus-visible, .home a:focus-visible {
   .product-preview .product-hero { gap: 1.25rem; }
   .product-preview .product-section { gap: .875rem; }
   .product-preview .product-media img { width: min(100%, 10rem); }
+}
+
+/* Fit narrower media frames to the artwork. */
+.product-preview .product-page--portrait .product-media {
+  justify-self: center;
+  width: min(100%, 13.5rem);
+  padding: .75rem;
+  background: var(--paper);
+}
+
+@media (max-width: 46rem) {
+  .product-preview .product-page--portrait .product-media { width: min(100%, 11.5rem); }
+}
+
+.product-preview .product-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 12rem));
+  align-items: start;
+  gap: clamp(.75rem, 3vw, 1.25rem);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.product-preview .product-gallery li { margin: 0; }
+.product-preview .product-gallery a { display: block; border-radius: .4rem; }
+.product-preview .product-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: inherit;
 }
