@@ -394,7 +394,7 @@ button:focus-visible, .home a:focus-visible {
   html { scroll-behavior: auto; }
 }
 
-/* Shared product layout, enabled only on the two pilot pages. */
+/* Shared product landing-page layout. */
 .product-preview {
   --ivory: #f5f3ee;
   --paper: #fbfaf7;
@@ -559,4 +559,20 @@ button:focus-visible, .home a:focus-visible {
   .product-preview .product-hero { gap: 1.25rem; }
   .product-preview .product-section { gap: .875rem; }
   .product-preview .product-media img { width: min(100%, 10rem); }
+}
+
+/* Fit narrower media frames to the artwork and allow a hero without media. */
+.product-preview .product-page--portrait .product-media {
+  justify-self: center;
+  width: min(100%, 13.5rem);
+  padding: .75rem;
+  background: var(--paper);
+}
+
+.product-preview .product-page--text-only .product-hero {
+  grid-template-columns: minmax(0, 42rem);
+}
+
+@media (max-width: 46rem) {
+  .product-preview .product-page--portrait .product-media { width: min(100%, 11.5rem); }
 }

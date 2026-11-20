@@ -43,7 +43,7 @@
   <link rel="stylesheet" href="/storekeeper/assets/pages.css">
   <link rel="stylesheet" href="/css/seo-refresh.css">
 </head>
-<body>
+<body class="product-preview">
   <a class="skip" href="#main">Skip to content</a>
   <header class="site-header">
     <a class="brand" href="/"><img class="company-wordmark" src="/assets/brand/wordmark.png" width="576" height="144" alt="Southeast Adventures"></a>
@@ -52,47 +52,65 @@
       <a href="/support/">Support</a>
     </nav>
   </header>
-  <main id="main" class="product-page">
+  <main id="main" class="product-page product-page--portrait">
     <section class="product-hero" aria-labelledby="product-title">
-      <div class="product-identity">
-        <img class="product-app-icon" src="/assets/icons/memrays.png" width="88" height="88" alt="">
-        <h1 id="product-title">memrays: A Faith and Gratitude Journal</h1>
+      <div class="product-intro">
+        <div class="product-identity">
+          <img class="product-app-icon" src="/assets/icons/memrays.png" width="64" height="64" alt="">
+          <h1 id="product-title">memrays: A Faith and Gratitude Journal</h1>
+        </div>
+        <p class="lead">An answered prayer or a moment of gratitude can be easy to forget by the end of the week. memrays gives those experiences a place of their own, with photos and tags that help you find a particular entry when you want to revisit it.</p>
+        <p>Available as a free download for iPhone and iPad with iOS or iPadOS 14 or later.</p>
+        <div class="product-actions">
+          <a class="store-badge" href="https://apps.apple.com/us/app/faith-journal-memrays/id6755944724" aria-label="Download memrays on the App Store">
+            <img src="/assets/icons/download-on-the-app-store.svg" width="150" height="50" alt="Download on the App Store">
+          </a>
+        </div>
       </div>
-      <p class="lead">An answered prayer or a moment of gratitude can be easy to forget by the end of the week. memrays gives those experiences a place of their own, with photos and tags that help you find a particular entry when you want to revisit it.</p>
-      <p>Available as a free download for iPhone and iPad with iOS or iPadOS 14 or later.</p>
-      <div class="product-actions">
-        <a class="store-badge" href="https://apps.apple.com/us/app/faith-journal-memrays/id6755944724" aria-label="Download memrays on the App Store">
-          <img src="/assets/icons/download-on-the-app-store.svg" width="150" height="50" alt="Download on the App Store">
-        </a>
-      </div>
-    </section>
-    <section class="product-section" aria-labelledby="screenshot-title">
-      <h2 id="screenshot-title">Inside the app</h2>
-      <img class="product-screenshot" src="/assets/screenshots/memrays.webp" alt="memrays App Store preview of the faith journal" width="600" height="1299" loading="lazy" decoding="async">
+      <figure class="product-media">
+        <img class="product-screenshot" src="/assets/screenshots/memrays.webp" alt="memrays App Store preview of the faith journal" width="600" height="1299" decoding="async">
+        <figcaption id="screenshot-title">Inside the app</figcaption>
+      </figure>
     </section>
     <section class="product-section" aria-labelledby="workflow-title">
-      <h2 id="workflow-title">How memrays works</h2>
-      <ol class="product-steps">
-        <li>Write down what happened and why it mattered to you.</li>
-        <li>Add a photo if it helps you remember, and tag the entry with a topic such as prayer or gratitude.</li>
-        <li>Filter by a tag to revisit related entries. Share an experience with someone if you choose.</li>
-      </ol>
+      <div class="product-section-heading">
+        <h2 id="workflow-title">How memrays works</h2>
+      </div>
+      <div class="product-section-body">
+        <ol class="product-steps">
+          <li>Write down what happened and why it mattered to you.</li>
+          <li>Add a photo if it helps you remember, and tag the entry with a topic such as prayer or gratitude.</li>
+          <li>Filter by a tag to revisit related entries. Share an experience with someone if you choose.</li>
+        </ol>
+      </div>
     </section>
     <section class="product-section" aria-labelledby="uses-title">
-      <h2 id="uses-title">When to use memrays</h2>
-      <p>Keep a record of answered prayers, collect insights from scripture study, or look back at small acts of service you’ve noticed throughout the year.</p>
+      <div class="product-section-heading">
+        <h2 id="uses-title">When to use memrays</h2>
+      </div>
+      <div class="product-section-body">
+        <p>Keep a record of answered prayers, collect insights from scripture study, or look back at small acts of service you’ve noticed throughout the year.</p>
+      </div>
     </section>
     <section class="product-section" aria-labelledby="faq-title">
-      <h2 id="faq-title">Frequently asked questions</h2>
-      <dl class="product-faq">
-        <dt>Can I find all my entries about a specific topic?</dt><dd>Yes. Add a tag such as prayer, family, or service to relevant entries, then filter the journal by that tag.</dd>
-        <dt>Can I edit a journal entry later?</dt><dd>Yes. You can come back to an existing entry and update it.</dd>
-      </dl>
+      <div class="product-section-heading">
+        <h2 id="faq-title">Frequently asked questions</h2>
+      </div>
+      <div class="product-section-body">
+        <dl class="product-faq">
+          <dt>Can I find all my entries about a specific topic?</dt><dd>Yes. Add a tag such as prayer, family, or service to relevant entries, then filter the journal by that tag.</dd>
+          <dt>Can I edit a journal entry later?</dt><dd>Yes. You can come back to an existing entry and update it.</dd>
+        </dl>
+      </div>
     </section>
     <section class="product-section" aria-labelledby="related-title">
-      <h2 id="related-title">Explore more apps</h2>
-      <p><a href="/famfind/">FamFind</a> · Turn family photos into a search-and-find game set in illustrated worlds.</p>
-      <p><a href="/#apps">Browse all Southeast Adventures apps</a></p>
+      <div class="product-section-heading">
+        <h2 id="related-title">Explore more apps</h2>
+      </div>
+      <div class="product-section-body">
+        <p><a href="/famfind/">FamFind</a> · Turn family photos into a search-and-find game set in illustrated worlds.</p>
+        <p><a href="/#apps">Browse all Southeast Adventures apps</a></p>
+      </div>
     </section>
   </main>
   <footer class="site-footer">
